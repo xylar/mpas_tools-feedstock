@@ -135,6 +135,7 @@ tests:
       run:
         - conda
         - git
+        - pip
         - pytest
         - requests
     files:
