@@ -122,6 +122,8 @@ tests:
           - mpas_to_triangle --help
           - triangle_to_netcdf --help
           - jigsaw_to_netcdf --help
+          - conda config --set channel_priority strict
+          - conda config --add channels conda-forge
           - build_jigsaw --clone
           - scrip_from_mpas --help
           - compute_mpas_region_masks --help
@@ -131,6 +133,7 @@ tests:
           - compute_projection_region_masks --help
     requirements:
       run:
+        - conda
         - git
         - pytest
         - requests
